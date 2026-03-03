@@ -34,5 +34,7 @@ public class Ejercicio
 
     public virtual void Ejecutar()
     {
+        
     }
+    
 }

@@ -1,4 +1,4 @@
-﻿using Clase_ICDIA_Unidad2.EjerciciosBasicos;
+﻿using Clase_ICDIA_Unidad2.EjecutoresEjercicios;
 
 namespace Clase_ICDIA_Unidad2;
 
@@ -9,10 +9,16 @@ public class Program
     {
         Console.WriteLine("Clase_ICDIA_Unidad2");
 
-        Ejercicio ejercicio;
-
-        ejercicio = new Ejercicio_ParImpar(5);
-        ejercicio.Ejecutar();
+        int idx = 2; 
+        switch (idx)
+        {
+            case 1:
+                new RunnerEjercicio_ParImpar();
+                break;
+            case 2:
+                new RunnerSumaAB();
+                break;
+        }
 
 
     }
