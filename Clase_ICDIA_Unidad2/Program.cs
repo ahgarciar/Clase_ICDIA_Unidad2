@@ -9,7 +9,7 @@ public class Program
     {
         Console.WriteLine("Clase_ICDIA_Unidad2");
 
-        int idx = 7; 
+        int idx = 9; 
         switch (idx)
         {
             case 1:
@@ -26,6 +26,12 @@ public class Program
                 break;
             case 7:
                 new RunnerEjercicioSumaABGenerico();
+                break;
+            case 8:
+                new RunnerEjercicioIMC();
+                break;
+            case 9:
+                new RunnerDistanciaEntreDosPuntos();
                 break;
             default:
                 Console.WriteLine("Opción no valida");
