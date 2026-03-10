@@ -36,5 +36,11 @@ public class Ejercicio
     {
         
     }
-    
+
+    public override string ToString()
+    {
+        return "(" + Identificador + ") - Nombre: " + NombreEjercicio + " - Descripción: " + Descripcion;
+    }
+
+
 }

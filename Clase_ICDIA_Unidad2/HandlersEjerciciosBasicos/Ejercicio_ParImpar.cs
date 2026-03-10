@@ -9,6 +9,13 @@ public class Ejercicio_ParImpar :Ejercicio
     public int N { get => n; set => n = value; }
     
     //constructor
+    public Ejercicio_ParImpar()
+        : base(1, "Par-Impar",
+            "Determinar si un número es par o impar")
+    {
+    }
+
+
     public Ejercicio_ParImpar(int n)
         : base(1, "Par-Impar",
             "Determinar si un número es par o impar")
