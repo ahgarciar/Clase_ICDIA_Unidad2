@@ -1,5 +1,7 @@
 ﻿using Clase_ICDIA_Unidad2.EjecutoresEjercicios;
 using Clase_ICDIA_Unidad2.HandlersEjerciciosBasicos;
+using Clase_ICDIA_Unidad2.JuegosAzar;
+using Clase_ICDIA_Unidad2.ListasGenericas;
 
 namespace Clase_ICDIA_Unidad2;
 
@@ -20,7 +22,7 @@ public class Program
         }
         
 
-        int idx = 15; 
+        int idx = 23; 
         switch (idx)
         {
             case 1:
@@ -49,6 +51,18 @@ public class Program
                 break;
             case 15:
                 new RunnerPerimetroPolRegular();
+                break;
+            case 20:
+                new Ej2_ListaEnlanzada();
+                break;
+            case 21:
+                new Ej3_Lista();
+                break;
+            case 22:
+                new Ej4_pokemon();
+                break;
+            case 23:
+                new JuegoDado();
                 break;
             default:
                 Console.WriteLine("Opción no valida");
