@@ -1,6 +1,6 @@
 namespace Clase_ICDIA_Unidad2.RPG_Mini;
 
-public class Enemigo 
+public class Enemigo : Personaje
 {
     /*
     Jugador tiene vida / ataque
@@ -16,10 +16,11 @@ public class Enemigo
     Despues del turno del jugador, el enemigo podrá atacar, si el jugador
     defendio previamente, entonces el ataque bajará menos. 
     Existe una probabalidad de que se esquive el ataque
-    
-    
-    
-
-    
     */
+    
+    public Enemigo(string nombre, int vida, int ataque, double probEsquivar)
+        : base(nombre, vida, ataque, probEsquivar)
+    {
+        
+    }
 }

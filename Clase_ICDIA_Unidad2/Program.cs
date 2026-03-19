@@ -2,6 +2,7 @@
 using Clase_ICDIA_Unidad2.HandlersEjerciciosBasicos;
 using Clase_ICDIA_Unidad2.JuegosAzar;
 using Clase_ICDIA_Unidad2.ListasGenericas;
+using Clase_ICDIA_Unidad2.RPG_Mini;
 
 namespace Clase_ICDIA_Unidad2;
 
@@ -22,7 +23,7 @@ public class Program
         }
         
 
-        int idx = 23; 
+        int idx = 24; 
         switch (idx)
         {
             case 1:
@@ -63,6 +64,9 @@ public class Program
                 break;
             case 23:
                 new JuegoDado();
+                break;
+            case 24:
+                new MainJuego();
                 break;
             default:
                 Console.WriteLine("Opción no valida");
