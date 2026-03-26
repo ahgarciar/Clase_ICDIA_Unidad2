@@ -7,6 +7,8 @@ public class Personaje
     private int ataque;
     private double probabilidad_esquivar;
 
+    private Random random;
+
     public string Nombre
     {
         get => nombre;
@@ -48,7 +50,23 @@ public class Personaje
         Vida = vida;
         Ataque = ataque;
         Probabilidad_esquivar = probabilidad_esquivar;
+        random = new Random(5);
     }
 
+    public void EfectuaAtaque(Personaje p)
+    {
+        double probAtaque = random.NextDouble();
+
+        if (probAtaque > p.Probabilidad_esquivar)
+        {
+            //p.Vida = p.Vida - Ataque;
+            //p.Vida -= Ataque;
+            
+            //si ataque es 100
+            //random.Next(0,100) --> 0-99
+            p.Vida -= random.Next(0, Ataque+1);
+            
+        }
+    }
 
 }
